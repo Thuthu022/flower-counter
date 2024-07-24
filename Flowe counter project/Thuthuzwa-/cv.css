@@ -1,0 +1,245 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+
+header {
+    background-image: url('imagee/background.png'); 
+    background-size: cover; 
+    background-position: center; 
+    color: whitesmoke;
+    text-align: center;
+    padding: 1em;
+    position: relative;
+}
+
+
+.container {
+    padding: 10px 5%; /* Adjusted padding for smaller screens */
+    max-width: 1200px; /* Added maximum width for better desktop layout */
+    margin: 0 auto; /* Center align the content */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: pink;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.header-text {
+    margin-top: 10%;
+    font-size: 30px;
+}
+
+.header-text h1 span {
+    font-size: 60px;
+    margin-top: auto;
+}
+
+#about {
+    padding: 80px 0 0 0; /* Adjusted padding for smaller screens */
+    color: whitesmoke;
+    font-size: large;
+    margin-bottom: 0;
+}
+
+#picture {
+    height: 30%;
+    width: 30%;
+}
+
+
+
+.row {
+    /* display: flex; */
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1 {
+    flex-basis: 100%;
+}
+
+.about-col-1 img {
+    width: 60%;
+    /* height:10% ; */
+    border-radius: 10px;
+}
+
+.about-col-2 {
+    flex-basis: 100%;
+}
+
+.sub {
+    font-size: 40px; /* Adjusted font size for smaller screens */
+    font-weight: 600;
+    color: rgb(238, 19, 183);
+}
+
+#skills {
+    padding: 50px 0; /* Adjusted padding for smaller screens */
+}
+
+.skills-list,
+.hobbies-list {
+    list-style-type: disc;
+    color: aliceblue;
+    margin-top: 30px; /* Adjusted margin for smaller screens */
+}
+
+.contact-top {
+    color: white;
+    font-style: italic;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    background-color: rgb(238, 19, 183);
+}
+
+form input,
+form textarea {
+    width: calc(100% - 30px);
+    border: 0;
+    outline: none;
+    padding: 15px;
+    margin: 15px;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+form .btn {
+    padding: 12px 40px;
+    font-size: 18px;
+    margin-top: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.alert {
+    width: 100%;
+    background: #e04090;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    color: aliceblue;
+    display: none;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+.skills-item {
+    flex-basis: calc(33.33% - 20px); 
+    margin: 10px;
+    text-align: center; 
+}
+
+.skills-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+.hobby-item {
+    flex-basis: 30%;
+    margin: 10px;
+}
+
+.hobbies-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hobbies-list img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+.section-divider {
+    height: 5px;
+    background: linear-gradient(to right, pink, #ff69b4); /* Gradient background */
+    animation: blink 1s infinite alternate; /* Blinking animation */
+}
+
+.section-divider {
+    height: 5px; /* Adjust thickness as needed */
+    background: repeating-linear-gradient(90deg, pink, pink 5px, transparent 5px, transparent 10px); /* Dotted line */
+}
+
+
+/* Animation keyframes */
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 10px 5%;
+    }
+    
+    .header-text {
+        margin-top: 100%;
+        font-size: 16px;
+    }   
+    .header-text h1{
+        font-size: 30px;
+    }
+   
+}
+
+
+
+
+
+
+

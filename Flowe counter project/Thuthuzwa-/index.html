@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cv.css">
+    <title>Thuthuzwa CV</title>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills & Hobbies</a></li>
+                <li><a href="#contactForm">Contact Me</a></li> 
+            </ul> 
+        </nav>
+        <div class="header-text">
+            <h1>Thuthuzwa Mshumpela</h1>
+            <p>Software Engineer Intern</p>
+        </div>
+    </div>
+</header>
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div id="picture" class="about-col-1">
+                <img src="imagee/image.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub"> About Me</h1>
+                <p> Hello there! 👋 I'm Thuthuzwa Mshumpela, a passionate software engineer intern on a journey to explore and contribute to the exciting world of technology. Currently immersed in an internship, I am actively learning and applying my skills in software development to solve real-world challenges. I bring a solid foundation in programming languages such as HTML, JavaScript,CSS and Java, and I am enthusiastic about tackling projects. Being a curious and dedicated learner, I thrive in dynamic environments where collaboration and innovation intersect. My goal is to leverage my internship experience to enhance my technical abilities, gain insights, and contribute meaningfully to the projects I'm involved in. I'm open to new challenges, always eager to learn, and ready to make a positive impact. </p>
+            </div>
+        </div>
+    </div>
+    <div class="section-divider"></div>
+</div>
+
+<div id="skills">
+    <div class="container">
+        <h1 class="sub"> My Skills</h1>
+        <div class="skills-list">
+            <div class="skills-item">
+                <img src="imagee/html.png">
+            </div>
+            <div class="skills-item">
+                <img src="imagee/css.png">
+            </div>
+            <div class="skills-item">
+                <img src="imagee/javascript.png">
+            </div>
+        </div>
+    </div>
+    <div class="section-divider"></div>
+</div>
+
+<div id="hobbies">
+    <div class="container">
+        <h1 class="sub"> My Hobbies</h1>
+        <div class="hobbies-list">
+            <div class="hobby-item">
+                <img src="imagee/painting.png">
+            </div>
+            <div class="hobby-item">
+                <img src="imagee/swimming.png">
+            </div>
+            <div class="hobby-item">
+                <img src="imagee/books.png">
+            </div>
+        </div>
+    </div>
+    <div class="section-divider"></div>
+</div>
+
+<div class="container">
+    <form action="" id="contactForm">
+        <div class="contact-top">
+            <h1 class="sub">Contact Me</h1>
+            <p> 📩 <i>thmshum022@student.wethinkcode.co.za</i></p>
+            <p> ☎️ <i>072 144 9816</i></p>
+        </div>
+        <div class="alert">Message sent successfully!👍</div>
+        <div class="inputBox">
+            <input type="text" id="name" placeholder="Name"/>
+        </div>
+        <div class="inputBox">
+            <input type="email" id="emailid" placeholder="Email"/>
+        </div>
+
+        <div class="inputBox">
+            <textarea id="message" cols="30" rows="10" placeholder="Message"></textarea>
+        </div>
+
+        <div class="inputBox">
+            <button type="submit" class="btn">Submit</button>
+        </div>
+    </form>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+<script src="cv.js"></script>
+</body>
+</html>
